@@ -32,11 +32,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-      function check_login(login, password) {
-        console.log(login);
+      function check_login(login, password)
+      {
+        console.log("Login=" + login + "-Password=" + password);
 
+        console.log(document.getElementById('inputEmail').value );
 
-
+        if (login.localeCompare("drfalken@altair.fr")==0)
+        {
+          console.log("User found");
+          if (password.localeCompare("wargames")==0) return true
+        }
       }
     </script>
 
@@ -60,8 +66,7 @@
           </label>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" onclick="check_login('franz', 'franz');" type="submit">Se connecter</button>
-
+        <button class="btn btn-lg btn-primary btn-block" type="b">Se connecter</button>
       </form>
 
     </div> <!-- /container -->
