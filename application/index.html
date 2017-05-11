@@ -41,7 +41,8 @@
         if (login.localeCompare("drfalken@altair.fr")==0)
         {
           console.log("User found");
-          if (password.localeCompare("wargames")==0) return true
+          if (password.localeCompare("wargames")==0)
+            window.location.replace("./main.html");
         }
       }
     </script>
