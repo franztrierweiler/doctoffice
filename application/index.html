@@ -34,7 +34,7 @@
     <script>
       function check_login(login, password)
       {
-        console.log("Login=" + login + "-Password=" + password);
+        console.log("Login=" + login + 	"-Password=" + password);
 
         console.log(document.getElementById('inputEmail').value );
 
@@ -46,6 +46,10 @@
         }
       }
     </script>
+    
+    <script type="text/javascript" src="https://helpdeskservices.ingenico.com/s/cb50cafb832dfab6790ec65a7fd45d7b-T/-x96igm/78002/e852c65c95cb287db96037d342ecda12/2.0.26/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=a0ac578b"></script>
+
+ 
 
   </head>
 
@@ -68,6 +72,7 @@
         </div>
 
         <button class="btn btn-lg btn-primary btn-block" onClick="check_login(document.getElementById('inputEmail').value,document.getElementById('inputPassword').value);" type="button">Se connecter</button>
+        
       </form>
 
     </div> <!-- /container -->
